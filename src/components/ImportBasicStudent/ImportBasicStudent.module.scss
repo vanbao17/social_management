@@ -1,0 +1,39 @@
+.wrapper {
+  width: 30%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .container_input {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_input label {
+    margin-bottom: 12px;
+  }
+  .container_input input {
+    padding: 8px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 4px;
+    outline: none;
+    transition: 0.25s;
+    font-size: 16px;
+  }
+  .container_input input:focus {
+    border: 1px solid #2684ff;
+    box-shadow: 0 0 0 1px #2684ff;
+  }
+  .btn_submit button {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #2684ff;
+    border: 1px solid #2684ff;
+    cursor: pointer;
+    outline: none;
+  }
+  .btn_submit button span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

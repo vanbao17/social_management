@@ -1,0 +1,33 @@
+.wrapper {
+  padding: 12px;
+  .title {
+    margin-bottom: 24px;
+  }
+  .nav {
+    width: 100%;
+    position: relative;
+  }
+  .nav ul {
+    display: flex;
+    align-items: center;
+  }
+  .nav ul li {
+    padding: 6px 12px;
+    cursor: pointer;
+    z-index: 2;
+    border-bottom: 2px solid transparent;
+    transition: 0.25s;
+  }
+  .nav .line {
+    width: 100%;
+    height: 2px;
+    background-color: #f2f3f4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .nav ul li.active {
+    border-bottom: 2px solid #3f81fe;
+  }
+}

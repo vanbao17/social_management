@@ -1,0 +1,120 @@
+.wrapper {
+  width: 100%;
+  padding-top: 12px;
+  > h2 {
+    text-align: center;
+    margin: 12px 0px;
+  }
+  .actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+  }
+  .search {
+    width: 30%;
+  }
+  .search .container_search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f2f3f4;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0px 6px;
+  }
+  .search input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+  }
+  .list {
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
+  }
+  .drop_box {
+    z-index: 50;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table th {
+    width: calc(100% / 7);
+    padding: 6px 0px;
+    border: 1px solid black;
+    background-color: #fff;
+  }
+  table tr.bg {
+    background-color: #f2f3f4;
+  }
+  table td {
+    text-align: center;
+    padding: 6px 0px;
+  }
+  table .icon {
+    position: relative;
+  }
+  table .icon .faEllipsisV {
+    cursor: pointer;
+  }
+  table .icon ul {
+    position: absolute;
+    text-align: left;
+    background-color: #fff;
+    padding: 12px;
+  }
+  table .icon ul li {
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+    border-radius: 5px;
+  }
+  table .icon ul li:hover {
+    background-color: #f2f3f4;
+  }
+  .change_pass {
+    padding: 12px;
+  }
+  .change_pass .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .change_pass input {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0px;
+    outline: none;
+  }
+  .change_pass .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .change_pass .buttons button {
+    padding: 6px;
+    cursor: pointer;
+  }
+  .change_pass .buttons button:nth-child(2) {
+    background-color: #3f81fe;
+    color: #fff;
+    border: 1px solid #3f81fe;
+  }
+  .list_role {
+    padding: 6px;
+  }
+  .list_role li {
+    padding: 6px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .list_role li:hover {
+    background-color: #eceaea;
+  }
+}

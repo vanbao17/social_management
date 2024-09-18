@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  .title {
+    display: flex;
+    align-items: center;
+  }
+  .drop_down {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    transition: 0.25s;
+  }
+
+  .drop_down ul {
+    width: 90%;
+    background-color: #fff;
+  }
+  .drop_down ul li {
+    padding: 6px;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .title {
+    width: 100%;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .title:hover {
+    background-color: #d2d0d0;
+    padding-left: 6px;
+  }
+}

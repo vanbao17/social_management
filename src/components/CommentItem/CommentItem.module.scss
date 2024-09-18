@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+}
+.item {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 6px 0px;
+  .image_user {
+    width: 32px;
+    height: 32px;
+  }
+  .image_user img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .name_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .name_content .text {
+    background-color: #f2f3f4;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 20px;
+  }
+  .name_content .name {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .name_content .action_comment span {
+    font-size: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .container_reply {
+    width: 100%;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: #f2f3f4;
+  padding: 12px;
+  .logo {
+    color: #3f81fe;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .list_nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .list_nav .item_nav {
+    width: 100%;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .list_nav .item_nav:hover {
+    background-color: #d2d0d0;
+    padding: 6px 12px;
+  }
+}

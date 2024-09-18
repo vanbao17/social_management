@@ -1,0 +1,40 @@
+.wrapper {
+  padding: 12px;
+  .title {
+    margin-bottom: 24px;
+  }
+  .statistics {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .statistics .box {
+    width: 30%;
+    height: 200px;
+    padding: 12px;
+  }
+  .box .title_box {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .box > p {
+    font-size: 90px;
+    text-align: center;
+  }
+  .access {
+    background-color: rgb(21, 170, 21);
+    color: #fff;
+  }
+  .users {
+    background-color: rgb(203, 20, 20);
+    color: #fff;
+  }
+  .posts {
+    background-color: #3f81fe;
+    color: #fff;
+  }
+  .traffic {
+    margin-top: 12px;
+  }
+}
