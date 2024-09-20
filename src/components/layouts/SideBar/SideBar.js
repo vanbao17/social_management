@@ -46,7 +46,7 @@ function SideBar() {
       child: [],
       component: <div className={cx("item_nav")}>Files</div>,
       action: null,
-      path: "/",
+      path: "/files",
     },
     {
       title: "Đăng xuất",

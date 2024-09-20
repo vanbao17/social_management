@@ -104,3 +104,35 @@ export const getFiles = async (ID) => {
     throw error;
   }
 };
+export const getFileKey = async (key) => {
+  try {
+    const response = await axios.post(
+      "https:/baokun.site/api/v1/getFileKey",
+      {
+        key,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+    return response;
+  } catch (error) {
+    console.error("Error fetching data", error);
+    throw error;
+  }
+};
+export const getAll = async () => {
+  try {
+    const response = await axios.get("https:/baokun.site/api/v1/getAll", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response;
+  } catch (error) {
+    console.error("Error fetching data", error);
+    throw error;
+  }
+};

@@ -1,6 +1,7 @@
 import configs from "../configs/configs";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import DetailPost from "../pages/DetailPost/DetailPost";
+import Files from "../pages/Files/Files";
 import InforPost from "../pages/InforPost/InforPost";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import Posts from "../pages/Posts/Posts";
@@ -36,6 +37,10 @@ const publicRoutes = [
   {
     path: configs.thong_tin_post,
     component: InforPost,
+  },
+  {
+    path: configs.files,
+    component: Files,
   },
   {
     path: configs.login,
