@@ -3,7 +3,7 @@ const token = localStorage.getItem("token");
 export const getCommentPost = async (IDPost) => {
   try {
     const responseCommentPost = await axios.post(
-      "https:/baokun.site/api/v1/getCommentsPost",
+      "https://baokun.site/api/v1/getCommentsPost",
       { IDPost },
       {
         headers: {
@@ -20,7 +20,7 @@ export const getCommentPost = async (IDPost) => {
 export const getCountCommentPost = async (IDPost) => {
   try {
     const responseCommentPost = await axios.post(
-      "https:/baokun.site/api/v1/getCountCommentPost",
+      "https://baokun.site/api/v1/getCountCommentPost",
       { IDPost },
       {
         headers: {
@@ -37,7 +37,7 @@ export const getCountCommentPost = async (IDPost) => {
 export const getCountLikePost = async (IDPost) => {
   try {
     const responseCommentPost = await axios.post(
-      "https:/baokun.site/api/v1/getCountLikePost",
+      "https://baokun.site/api/v1/getCountLikePost",
       { IDPost },
       {
         headers: {
@@ -54,7 +54,7 @@ export const getCountLikePost = async (IDPost) => {
 export const getDateComment = async (IDPost) => {
   try {
     const responseCommentPost = await axios.post(
-      "https:/baokun.site/api/v1/getDateComment",
+      "https://baokun.site/api/v1/getDateComment",
       { IDPost },
       {
         headers: {
@@ -71,7 +71,7 @@ export const getDateComment = async (IDPost) => {
 export const getDateLike = async (IDPost) => {
   try {
     const responseCommentPost = await axios.post(
-      "https:/baokun.site/api/v1/getDateLike",
+      "https://baokun.site/api/v1/getDateLike",
       { IDPost },
       {
         headers: {

@@ -2,7 +2,7 @@ import axios from "axios";
 const token = localStorage.getItem("token");
 export const getStudents = async () => {
   try {
-    const rs = await axios.get("https:/baokun.site/api/v1/students", {
+    const rs = await axios.get("https://baokun.site/api/v1/students", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -15,7 +15,7 @@ export const getStudents = async () => {
 export const addStudents = async (msv, name, dob, gender, lsh) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/addStudents",
+      "https://baokun.site/api/v1/addStudents",
       { msv, name, dob, gender, lsh },
       {
         headers: {
@@ -31,7 +31,7 @@ export const addStudents = async (msv, name, dob, gender, lsh) => {
 export const lockAccount = async (ID) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/lockAccount",
+      "https://baokun.site/api/v1/lockAccount",
       {
         ID,
       },
@@ -49,7 +49,7 @@ export const lockAccount = async (ID) => {
 export const unLockAccount = async (ID) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/unLockAccount",
+      "https://baokun.site/api/v1/unLockAccount",
       {
         ID,
       },
@@ -67,7 +67,7 @@ export const unLockAccount = async (ID) => {
 export const deleteAccount = async (ID) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/deleteAccount",
+      "https://baokun.site/api/v1/deleteAccount",
       {
         ID,
       },
@@ -89,7 +89,7 @@ export const deleteAccount = async (ID) => {
 export const changePassword = async (newPass, ID) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/changePassword",
+      "https://baokun.site/api/v1/changePassword",
       {
         newPass,
         ID,
@@ -108,7 +108,7 @@ export const changePassword = async (newPass, ID) => {
 export const addRole = async (ID, role) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/addRole",
+      "https://baokun.site/api/v1/addRole",
       {
         ID,
         role,
@@ -131,7 +131,7 @@ export const addRole = async (ID, role) => {
 export const deleteRole = async (ID) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/deleteRole",
+      "https://baokun.site/api/v1/deleteRole",
       {
         ID,
       },
@@ -153,7 +153,7 @@ export const deleteRole = async (ID) => {
 export const searchUser = async (msv) => {
   try {
     const response = await axios.post(
-      "https:/baokun.site/api/v1/searchUser",
+      "https://baokun.site/api/v1/searchUser",
       { msv },
       {
         headers: {

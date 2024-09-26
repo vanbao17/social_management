@@ -2,7 +2,7 @@ import axios from "axios";
 const token = localStorage.getItem("token");
 export const login = async (msv, password) => {
   try {
-    const rs = await axios.post("https:/baokun.site/api/v1/login", {
+    const rs = await axios.post("https://baokun.site/api/v1/login", {
       msv,
       password,
     });
@@ -20,7 +20,7 @@ export const login = async (msv, password) => {
 };
 export const getCountPageViews = async () => {
   try {
-    const rs = await axios("https:/baokun.site/api/v1/getCountPageViews", {
+    const rs = await axios("https://baokun.site/api/v1/getCountPageViews", {
       headers: { Authorization: `Bearer ${token}` },
     });
     return rs;
@@ -31,7 +31,7 @@ export const getCountPageViews = async () => {
 };
 export const getCountStudents = async () => {
   try {
-    const rs = await axios("https:/baokun.site/api/v1/getCountStudents", {
+    const rs = await axios("https://baokun.site/api/v1/getCountStudents", {
       headers: { Authorization: `Bearer ${token}` },
     });
     return rs;
@@ -42,7 +42,7 @@ export const getCountStudents = async () => {
 };
 export const getCountPosts = async () => {
   try {
-    const rs = await axios("https:/baokun.site/api/v1/getCountPosts", {
+    const rs = await axios("https://baokun.site/api/v1/getCountPosts", {
       headers: { Authorization: `Bearer ${token}` },
     });
     return rs;
@@ -54,7 +54,7 @@ export const getCountPosts = async () => {
 export const getTrafficCountByDate = async (dates) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/getTrafficCountByDate",
+      "https://baokun.site/api/v1/getTrafficCountByDate",
       { dates },
       {
         headers: { Authorization: `Bearer ${token}` },

@@ -3,7 +3,7 @@ const token = localStorage.getItem("token");
 export const insertData = async (dataArray) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/insert-data",
+      "https://baokun.site/api/v1/insert-data",
       {
         dataArray,
       },
@@ -25,7 +25,7 @@ export const insertData = async (dataArray) => {
 export const checkData = async (dataArray) => {
   try {
     const rs = await axios.post(
-      "https:/baokun.site/api/v1/check-data",
+      "https://baokun.site/api/v1/check-data",
       {
         dataArray,
       },

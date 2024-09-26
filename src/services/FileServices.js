@@ -2,11 +2,11 @@ import axios from "axios";
 const token = localStorage.getItem("token");
 export const UploadFile = async (fileform, IDPost) => {
   try {
-    const Path = "https:/baokun.site/uploads/" + fileform.fileName;
+    const Path = "https://baokun.site/uploads/" + fileform.fileName;
     const FileType = fileform.filetype;
     const filename = fileform.fileName;
     const responseAddFilePost = await axios.post(
-      "https:/baokun.site/api/v1/addFilePost",
+      "https://baokun.site/api/v1/addFilePost",
       {
         IDPost,
         Path,
@@ -27,11 +27,11 @@ export const UploadFile = async (fileform, IDPost) => {
 };
 export const updateFilePost = async (fileform, IDUpload, PostId) => {
   try {
-    const Path = "https:/baokun.site/uploads/" + fileform.fileName;
+    const Path = "https://baokun.site/uploads/" + fileform.fileName;
     const FileType = fileform.filetype;
     const filename = fileform.fileName;
     const responseAddFilePost = await axios.post(
-      "https:/baokun.site/api/v1/updateFilePost",
+      "https://baokun.site/api/v1/updateFilePost",
       {
         IDUpload,
         PostId,
@@ -54,7 +54,7 @@ export const updateFilePost = async (fileform, IDUpload, PostId) => {
 export const UploadFolder = async (file) => {
   try {
     const response = await axios.post(
-      "https:/baokun.site/api/v1/upload_file_post",
+      "https://baokun.site/api/v1/upload_file_post",
       file,
       {
         headers: {
@@ -71,7 +71,7 @@ export const UploadFolder = async (file) => {
 export const getFilePost = async (IDPost) => {
   try {
     const response = await axios.post(
-      "https:/baokun.site/api/v1/getFilePost",
+      "https://baokun.site/api/v1/getFilePost",
       { IDPost },
       {
         headers: {
@@ -88,7 +88,7 @@ export const getFilePost = async (IDPost) => {
 export const getFiles = async (ID) => {
   try {
     const response = await axios.post(
-      "https:/baokun.site/api/v1/getFiles",
+      "https://baokun.site/api/v1/getFiles",
       {
         ID,
       },
@@ -107,7 +107,7 @@ export const getFiles = async (ID) => {
 export const getFileKey = async (key) => {
   try {
     const response = await axios.post(
-      "https:/baokun.site/api/v1/getFileKey",
+      "https://baokun.site/api/v1/getFileKey",
       {
         key,
       },
@@ -125,7 +125,7 @@ export const getFileKey = async (key) => {
 };
 export const getAll = async () => {
   try {
-    const response = await axios.get("https:/baokun.site/api/v1/getAll", {
+    const response = await axios.get("https://baokun.site/api/v1/getAll", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
