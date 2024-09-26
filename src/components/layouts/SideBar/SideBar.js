@@ -49,6 +49,13 @@ function SideBar() {
       path: "/files",
     },
     {
+      title: "Data Mining",
+      child: [],
+      component: <div className={cx("item_nav")}>Data Mining</div>,
+      action: null,
+      path: "/data_mining",
+    },
+    {
       title: "Đăng xuất",
       child: [],
       component: <div className={cx("item_nav")}>Đăng xuất</div>,

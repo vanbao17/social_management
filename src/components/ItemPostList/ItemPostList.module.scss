@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  gap: 10px;
   justify-content: space-between;
   padding: 6px;
   .name_content {
@@ -10,9 +11,10 @@
     gap: 5px;
   }
   .infor {
+    width: 90%;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
   .preview_post {
     font-size: 14px;
@@ -28,8 +30,10 @@
     position: relative;
   }
   .timeSamp {
+    width: 10%;
     font-size: 14px;
     color: #aaa;
+    text-align: center;
   }
   .list_option {
     width: 100%;

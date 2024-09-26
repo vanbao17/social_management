@@ -8,5 +8,6 @@ const configs = {
   nhap_ds_sv: "/nhap_ds_sinh_vien",
   thong_tin_post: "/thong_tin_post",
   files: "/files",
+  data_mining: "/data_mining",
 };
 export default configs;

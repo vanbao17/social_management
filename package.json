@@ -1,7 +1,7 @@
 {
   "name": "front-end",
   "version": "0.1.0",
-  "home": "https://mylifelink.vercel.app",
+  "home": "https://baor17.vercel.app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

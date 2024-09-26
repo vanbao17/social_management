@@ -10,6 +10,7 @@ function Files() {
   const [datas, setDatas] = useState(null);
   const [key, setKey] = useState(null);
   const [size, setSize] = useState(null);
+  const [sizePage, setSizePage] = useState(null);
   const handleFetchData = async (key) => {
     const rs = await getFileKey(key);
     setDatas(rs.data);
@@ -31,6 +32,13 @@ function Files() {
       handleFetchData(key);
     }
   }, [key]);
+  useEffect(() => {
+    if (datas != null) {
+      const newArr = datas.map((file) => file.Size);
+      const sum = handleSum(newArr);
+      setSizePage(sum);
+    }
+  }, [datas]);
   return (
     <div className={cx("wrapper")}>
       <h2>Quản lý files</h2>
@@ -75,7 +83,7 @@ function Files() {
         </div>
       ) : datas.length != 0 ? (
         <div className={cx("list_media")}>
-          <h3>Danh sách dữ liệu</h3>
+          <h3>Danh sách dữ liệu {sizePage / 1000 + "/5GB"}</h3>
           <ul className={cx("list")}>
             {datas.map((data) => {
               return (

@@ -169,7 +169,7 @@ function PostItem({ fixedComment, handleComment, dataPostItem, updatePost }) {
             }
             if (file.FileType == "video") {
               return (
-                <video className={cx("video")} controls={true}>
+                <video className={cx("video")} autoPlay controls={true}>
                   <source src={file.Path} type="video/mp4" />
                 </video>
               );

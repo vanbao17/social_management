@@ -1,5 +1,6 @@
 import configs from "../configs/configs";
 import Dashboard from "../pages/Dashboard/Dashboard";
+import DataMining from "../pages/DataMining/DataMining";
 import DetailPost from "../pages/DetailPost/DetailPost";
 import Files from "../pages/Files/Files";
 import InforPost from "../pages/InforPost/InforPost";
@@ -37,6 +38,10 @@ const publicRoutes = [
   {
     path: configs.thong_tin_post,
     component: InforPost,
+  },
+  {
+    path: configs.data_mining,
+    component: DataMining,
   },
   {
     path: configs.files,
